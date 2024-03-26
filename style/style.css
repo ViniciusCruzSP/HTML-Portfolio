@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Farro:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-green: #13FF00;
+    --color-white: #F6F6F6;
+    --color-black: #000000;
+
+    --font-anybody: "Anybody", sans-serif;
+    --font-farro: "Farro", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-black);
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.header_p {
+    font-family: var(--font-farro);
+}
+
+.refs_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start_buttom {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-family: var(--font-farro);
+    text-decoration: none;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 32px;
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+}
+
+.start_buttom:hover {
+    border-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.store_buttom {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-family: var(--font-farro);
+    text-decoration: none;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 32px;
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+}
+
+.store_buttom:hover {
+    border-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.club_buttom {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-family: var(--font-farro);
+    text-decoration: none;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 32px;
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+}
+
+.club_buttom:hover {
+    border-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.loud {
+    color: var(--color-green);
+}
+
+.noise {
+    color: var(--color-green);
+}
+
+.logo_header {
+    height: 20px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.div_main {
+    margin: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_section {
+    width: 50%;
+    gap: 30px;
+}
+
+.h1_main {
+    margin: 0;
+    font-size: 4.69rem;
+    font-family: var(--font-anybody);
+    font-weight: 800;
+}
+
+.p_main {
+    font-size: 1.25rem;
+    font-family: var(--font-farro);
+    margin-bottom: 50px;
+}
+
+.access_main {
+    font-size: 1.125rem;
+    font-family: var(--font-farro);
+    font-weight: 700;
+    background-color: var(--color-green);
+    text-align: center;
+    border-radius: 32px;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 12.5px;
+}
+
+.access_main:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.logo_main {
+    width: 38%;
+    height: auto;
+}
+
+.footer {
+    padding: 1px;
+    background-color: var(--color-green);
+    text-align: center;
+}
+
+.footer_p {
+    color: var(--color-black);
+    font-family: var(--font-farro);
+    font-weight: 800;
+}
+
+@media (max-width: 1200px) {
+    .div_main {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .header {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main_section {
+        width: auto;
+    }
+
+    .logo_main {
+        width: auto;
+    }
+}
